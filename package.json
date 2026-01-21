@@ -1,5 +1,5 @@
 {
-  "name": "img-shrink",
+  "name": "@skivuha/img-shrink",
   "version": "0.1.0",
   "description": "Tiny browser-first image resizer with crop/contain and compression.",
   "type": "module",
@@ -11,6 +11,9 @@
   },
   "bugs": "https://github.com/js-nerds/img-shrink/issues",
   "homepage": "https://github.com/js-nerds/img-shrink#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18.0.0"
   },

@@ -1,7 +1,7 @@
 # img-shrink
 
-[![npm version](https://img.shields.io/npm/v/img-shrink)](https://www.npmjs.com/package/img-shrink)
-[![npm downloads](https://img.shields.io/npm/dm/img-shrink)](https://www.npmjs.com/package/img-shrink)
+[![npm version](https://img.shields.io/npm/v/@skivuha/img-shrink)](https://www.npmjs.com/package/@skivuha/img-shrink)
+[![npm downloads](https://img.shields.io/npm/dm/@skivuha/img-shrink)](https://www.npmjs.com/package/@skivuha/img-shrink)
 [![coverage](https://codecov.io/gh/js-nerds/img-shrink/branch/main/graph/badge.svg)](https://codecov.io/gh/js-nerds/img-shrink)
 
 Tiny browser-first image resizer with sane defaults. Pass a `File`/`Blob`, get back a resized `Blob` with optional crop/contain behavior.
@@ -16,15 +16,15 @@ Tiny browser-first image resizer with sane defaults. Pass a `File`/`Blob`, get b
 ## Install
 
 ```bash
-npm install img-shrink
+npm install @skivuha/img-shrink
 ```
 
 ```bash
-pnpm add img-shrink
+pnpm add @skivuha/img-shrink
 ```
 
 ```bash
-yarn add img-shrink
+yarn add @skivuha/img-shrink
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ yarn add img-shrink
 ### Basic (cover crop)
 
 ```ts
-import { shrinkImage } from "img-shrink";
+import { shrinkImage } from "@skivuha/img-shrink";
 
 const file = input.files?.[0];
 if (!file) {
