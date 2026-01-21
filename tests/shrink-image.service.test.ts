@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, afterEach, beforeAll } from "vitest";
+import { describe, it, expect, vi, afterEach, beforeAll, beforeEach } from "vitest";
 import { __test__, shrinkImage } from "../src/services/shrink-image.service";
 
 const {
@@ -30,7 +30,7 @@ const createMockContext = (): MockContext => ({
   drawImage: vi.fn(),
 });
 
-beforeAll(() => {
+const ensureBlob = (): void => {
   if (typeof Blob === "undefined") {
     class MockBlob {
       public readonly size: number;
@@ -49,6 +49,14 @@ beforeAll(() => {
 
     vi.stubGlobal("Blob", MockBlob as unknown as typeof Blob);
   }
+};
+
+beforeAll(() => {
+  ensureBlob();
+});
+
+beforeEach(() => {
+  ensureBlob();
 });
 
 afterEach(() => {
