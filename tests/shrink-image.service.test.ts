@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, afterEach } from "vitest";
+import { describe, it, expect, vi, afterEach, beforeAll } from "vitest";
 import { __test__, shrinkImage } from "../src/services/shrink-image.service";
 
 const {
@@ -28,6 +28,27 @@ const createMockContext = (): MockContext => ({
   fillStyle: "",
   fillRect: vi.fn(),
   drawImage: vi.fn(),
+});
+
+beforeAll(() => {
+  if (typeof Blob === "undefined") {
+    class MockBlob {
+      public readonly size: number;
+      public readonly type: string;
+
+      public constructor(parts: Array<string | ArrayBuffer>, options?: { type?: string }) {
+        const text = parts
+          .map((part) =>
+            typeof part === "string" ? part : Buffer.from(part).toString("utf8"),
+          )
+          .join("");
+        this.size = text.length;
+        this.type = options?.type ?? "";
+      }
+    }
+
+    vi.stubGlobal("Blob", MockBlob as unknown as typeof Blob);
+  }
 });
 
 afterEach(() => {
