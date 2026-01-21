@@ -13,7 +13,8 @@
     "lib": ["ES2021", "dom"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "target": "ES2021"
+    "target": "ES2021",
+    "skipLibCheck": true
   },
   "include": ["index.ts", "src/**/*", "tests/**/*.test.ts", "vitest.config.ts"],
   "exclude": ["tests", "node_modules"]

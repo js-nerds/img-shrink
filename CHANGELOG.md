@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2026-01-21
+
+- Align tooling with Node 16 (Vite/Vitest versions and configs)
+
 ## [0.1.1] - 2026-01-21
 
 - Adjust package metadata and publish config for scoped package
