@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@skivuha/img-shrink)](https://www.npmjs.com/package/@skivuha/img-shrink)
 [![npm downloads](https://img.shields.io/npm/dm/@skivuha/img-shrink)](https://www.npmjs.com/package/@skivuha/img-shrink)
+[![tests](https://github.com/js-nerds/img-shrink/actions/workflows/publish.yml/badge.svg?branch=main&label=tests)](https://github.com/js-nerds/img-shrink/actions/workflows/publish.yml)
 [![coverage](https://codecov.io/gh/js-nerds/img-shrink/branch/main/graph/badge.svg)](https://codecov.io/gh/js-nerds/img-shrink)
 
 Tiny browser-first image resizer with sane defaults. Pass a `File`/`Blob`, get back a resized `Blob` with optional crop/contain behavior.

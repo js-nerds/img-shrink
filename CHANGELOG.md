@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] - 2026-01-21
+
+- Adjust package metadata and publish config for scoped package
+- Add CI tests/coverage badge and coverage upload
+
 ## [0.1.0] - 2026-01-21
 
 - Initial release of `img-shrink`

@@ -1,6 +1,6 @@
 {
   "name": "@skivuha/img-shrink",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tiny browser-first image resizer with crop/contain and compression.",
   "type": "module",
   "license": "MIT",
