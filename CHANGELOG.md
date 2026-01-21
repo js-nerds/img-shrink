@@ -1,0 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [0.1.0] - 2026-01-21
+
+- Initial release of `img-shrink`
+- Add `shrinkImage` with `cover`/`contain` modes
+- Support width-only or height-only resizing with aspect ratio
+- Add output format selection and quality control
+- Reject upscaling when target size exceeds source
+- Add TypeScript types and public API exports
+- Add tests with coverage reporting
+- Add CI publish workflow and coverage upload
